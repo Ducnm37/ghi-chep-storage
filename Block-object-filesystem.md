@@ -36,6 +36,9 @@ Object storage thì được hiểu là đối tượng được lưu trữ. Đ�
 
 
 ##2. So sánh
+
+<img src="http://i.imgur.com/gAs6NRk.png">
+
 Điểm khác biệc nữa với block storage, là block storage được truy cập trực tiếp bởi hệ điều hành trong khi Object storage sẽ bị ảnh hưởng lớn tới hiệu năng khi làm điều đó.
 
 Object storage là ý tưởng để giải quyết vấn đề về việc dữ liệu tăng. Dữ liệu ngày càng được tạo ra nhiều, hệ thống lưu trữ cũng cùng phát triển với tốc độ tương ứng. Điều j sẽ xảy ra nếu bạn cố gắng phát triển hệ thống lưu trữ khối lên vượt quá cả trăm tetabytes hoặc xa hơn là petabyte? Bạn có thể gặp vấn đề vê độ bề, hạn chế khó khăn với cơ sở hạ tầng mà bạn đang có hoặc chi phí quản lý của bạn có thể lên tận nóc.
