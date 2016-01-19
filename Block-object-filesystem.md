@@ -37,7 +37,7 @@ Object storage thì được hiểu là đối tượng được lưu trữ. Đ�
 
 ##2. So sánh
 
-<img src="http://i.imgur.com/gAs6NRk.png">
+ <img src="http://i.imgur.com/gAs6NRk.png">
 
 Điểm khác biệc nữa với block storage, là block storage được truy cập trực tiếp bởi hệ điều hành trong khi Object storage sẽ bị ảnh hưởng lớn tới hiệu năng khi làm điều đó.
 
