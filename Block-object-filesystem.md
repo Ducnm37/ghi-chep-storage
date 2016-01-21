@@ -16,7 +16,7 @@
 Với block storage, file được cắt nhỏ với kích thước bằng kích thướng độ lớn của 1 block. Mỗi file này sẽ có 1 địa chỉ riêng, và ứng dụng lấy block bằng các lời gọi SCSI tới địa chỉ. Không như trường hợp của NAS, ứng dụng quyết định đâu là nơi lưu trữ dữ liệu và cách giao tiếp với  khối lưu trữ.
 
 Block storage có thể là khối lưu trữ cục bộ hoặc đính kèm với mạng như trong SAN, như giao thức iSCSl.
-Thiết bị Block storage thườngd được định dạng với file hệ thống, như Linux ext3 và btrfs hoặc Microsoft FAT32 hoặc NTFS. 
+Thiết bị Block storage thường được định dạng với file hệ thống, như Linux ext3 và btrfs hoặc Microsoft FAT32 hoặc NTFS. 
 
 Trong OpenStack, block storage được cung cấp bởi hệ thống Nova kết hơn làm việc với hện thống Cinder. Khi bạn bật máy ảo ở Nova, nó sẽ kết nối đến block storage mặc định ít nhất là đến phần đọc/ghi mà hệ điều hành đang chạy.
 
@@ -24,14 +24,14 @@ Block storage có thể được sử dụng với dữ liệu bị mất khi m�
 
 Thiết bị Block storage thường được đính kèm và sử dụng đọc. ghi chỉ với 1 máy hoặc 1 máy ảo trong 1 thời gian (nghĩa là chỉ có 1 máy thao tác với dữ liệu 1 ở 1 thời điểm).
 
-Block storage có thể được hiểu là đối tượng được lưu trữ trong các khổi.
+Block storage có thể được hiểu là đối tượng được lưu trữ trong các khối.
 
 
 
 ###Object Storage:
 Là lưu trữ storage hướng đến đối tượng. Đây là 1 cách hữu dụng đối với HTML và đảm bảo an toàn cho dữ liệu cao hơn. Đối tượng ở đây là các dòng bytes. 1 lần đối tượng được tạo và ghi, nó không thể thay đổi mà chỉ có thể copy hoặc xóa. Vì nó không cung cấp cho việc bạn sửa 1 lần của dữ liệu, nó coi mỗi đối tượng được lưu trữ là 1 đơn vị. Đối tượng lưu trữ trả về ID khối thường được tính từ nội dung của đối tượng (bao gồm cả file và metadata của nó).Không giống như file, đối tượng ở đây được lưu trữ theo cấu trúc phẳng
 
-1 lần ghi các đối tượng có thể được đọc vởi nhiều máy khách. Nếu bạn muốn dữ liệu được ghi 1 lần và có thể được đọc bởi nhiều máy tính gần, xa trong tương lai, object storage có thể giúp bạn thực hiện điều đó
+1 lần ghi các đối tượng có thể được đọc với nhiều máy khách. Nếu bạn muốn dữ liệu được ghi 1 lần và có thể được đọc bởi nhiều máy tính gần, xa trong tương lai, object storage có thể giúp bạn thực hiện điều đó.
 Object storage thì được hiểu là đối tượng được lưu trữ. Đối tượng ở đây chứa cấc dữ liêu, metadata và được định danh 1 cách duy nhất. Không giới hạn về kiểu và dung lượng metadata, nó khiến cho object storage trở nên dễ tùy chỉnh và tốt hơn.
 
 
